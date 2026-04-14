@@ -1,4 +1,4 @@
-import Preloader from "@/pages/components/Preloader";
+import Preloader from "@/components/Preloader";
 import {useEffect, useState} from "react";
 
 export default function Header() {

@@ -1,12 +1,12 @@
-import HomeContainer from "@/pages/components/HomeContainer";
-import GapContainer from "@/pages/components/GapContainer";
-import BookingStepsContainer from "@/pages/components/BookingStepsContainer";
-import DreamBestCarContainer from "@/pages/components/DreamBestCarContainer";
-import CustomerServiceContainer from "@/pages/components/CustomerServiceContainer";
-import PremiumCarHireContainer from "@/pages/components/PremiumCarHireContainer";
-import TestimonialsContainer from "@/pages/components/Testimonials Container";
-import FaqContainer from "@/pages/components/FaqContainer";
-import {Vehicle} from "@/pages/types/Vehicle";
+import HomeContainer from "@/components/HomeContainer";
+import GapContainer from "@/components/GapContainer";
+import BookingStepsContainer from "@/components/BookingStepsContainer";
+import DreamBestCarContainer from "@/components/DreamBestCarContainer";
+import CustomerServiceContainer from "@/components/CustomerServiceContainer";
+import PremiumCarHireContainer from "@/components/PremiumCarHireContainer";
+import TestimonialsContainer from "@/components/Testimonials Container";
+import FaqContainer from "@/components/FaqContainer";
+import {Vehicle} from "@/types/Vehicle";
 
 const vehicleData: Vehicle[] = [
     {

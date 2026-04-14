@@ -1,7 +1,8 @@
-import SendEmail from "@/pages/components/SendEmail";
-import ContactFormTemplate from "@/pages/email/ContactFormTemplate";
+import SendEmail from "@/pages/api/SendEmail";
+import ContactFormTemplate from "@/components/ContactFormTemplate";
+import {NextApiRequest, NextApiResponse} from "next";
 
-export default async function handler(req, res) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method !== "POST") {
         return res.status(405).json({ message: "Method not allowed" });
     }

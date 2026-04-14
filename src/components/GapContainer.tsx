@@ -1,4 +1,4 @@
-import {Vehicle} from "@/pages/types/Vehicle";
+import {Vehicle} from "@/types/Vehicle";
 
 type Props = {
     vehicleData: Vehicle[];

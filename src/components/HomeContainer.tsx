@@ -1,9 +1,9 @@
 "use client";
 
-import LocationSearchInput from "@/pages/components/LocationSearchInput";
-import {Vehicle} from "@/pages/types/Vehicle";
+import LocationSearchInput from "@/components/LocationSearchInput";
+import {Vehicle} from "@/types/Vehicle";
 import {useEffect, useState} from "react";
-import {formatDateTime, formatDateForInput} from "@/pages/types/utils";
+import {formatDateTime, formatDateForInput} from "@/types/utils";
 
 type Props = {
     vehicleData: Vehicle[];
@@ -100,7 +100,9 @@ export default function HomeContainer({ vehicleData }: Props) {
             setPhone("");
             setTrip("");
             setShowPersonalInfo(false);
-            setShowForm(false);
+            setTimeout(() => {
+                setShowForm(false);
+            }, 3000)
         } else {
             setMessage({
                 message: "An error occurred! Please try again later.",
