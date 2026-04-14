@@ -1,40 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+## 🚗 PremiumTransitz
+PremiumTransitz is a modern private car hire web application inspired by services like Uber and Lyft, with a focus on luxury, client-tailored transportation experiences.
 
-## Getting Started
+Built with a performance-first mindset using Next.js, the platform provides a seamless booking interface, real-time location input, and automated communication via email.
 
-First, run the development server:
+## ✨ Features
+    🚘 Luxury Ride Booking Interface
+Users can request private transportation based on personalized needs.
 
+    📍 Google Places Autocomplete Integration
+Smart location input using Google Places API for accurate pickup and drop-off selection.
+
+	📧 Automated Email Notifications
+Contact form submissions are processed and delivered via email using Resend API.
+
+	⚡ Fast & Optimized Performance
+Built with Next.js for efficient rendering and smooth user experience.
+
+	📱 Responsive Design
+Fully responsive UI built with modern CSS practices (Tailwind CSS).
+
+## 🛠️ Tech Stack
+* Frontend: Next.js (Pages Router), React.js
+* Styling: Tailwind CSS
+* APIs:
+  * Google Places API (location autocomplete)
+  * Resend API (email delivery)
+* Deployment: Railway 
+* Version Control: Git & GitHub
+
+## 🧠 Architecture Overview
+
+This project follows a clean and scalable structure:
+* Pages Router for routing and SPA-like navigation
+* Component-based UI architecture for reusability 
+* API integration layer for handling external services 
+* Environment-based configuration for secure API usage
+ 
+## 🔐 Environment Variables
+
+Create a .env.local file in the root directory:
+
+
+    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_api_key
+    RESEND_API_KEY=your_resend_api_key
+
+⚠️ These variables must also be configured in your deployment environment (e.g., Railway).
+
+## 🚀 Getting Started
+
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/premiumtransitz.git
+cd premiumtransitz
+```
+2. Install dependencies
+```bash
+npm install
+```
+3. Run development server
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+App will be available at:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+    http://localhost:3000
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 📦 Production Build
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌍 Deployment
 
-## Learn More
+This project is deployed using Railway, which automatically:
+* Installs dependencies 
+* Builds the Next.js application 
+* Serves it in production
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Project Goals
+* Deliver a premium, user-friendly booking experience 
+* Demonstrate strong full-stack web development skills 
+* Showcase integration of third-party APIs in real-world applications 
+* Build a scalable foundation for future expansion (auth, payments, ride tracking)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## 💡 Future Improvements
+* User authentication (accounts, booking history)
+* Payment integration (Stripe)
+* Real-time ride tracking 
+* Admin dashboard for ride management 
+* Backend service layer for scalability
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👨‍💻 Author
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+[Iykescode](https://www.iykescode.com) (Michael Chuks)
+* Full-stack developer specializing in Next.js, React, and modern web applications
+* Focused on building scalable, high-performance, user-centric solutions
